@@ -1,0 +1,624 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+/*你赢了样式*/
+#win_box{
+	width:100%;
+	height:100%;
+	display:none;
+}
+#win{
+	width:350px;
+	height:80px;
+	line-height:80px;
+	margin:0 auto;
+	display:block;
+	color:gold;
+	font-size:80px;
+	opacity:0;
+	animation:fade-in 0.2s linear 0.5s;
+	animation-fill-mode:forwards;
+}
+@keyframes fade-in{
+	0%{
+		opacity:0;
+		text-shadow:0px 0px 0px #FFCC00;
+
+	}
+	80%{
+		opacity:0.7;
+		text-shadow:2px 2px 2px #FFCC00;
+	}
+	100%{
+		opacity:1;
+		text-shadow:3px 3px 2px #FFCC00;
+	}
+}
+#win_box .bright{
+	width:453px;
+	height:510px;
+	position:absolute;
+	top:73px;
+	left:652px;
+	z-index:-6;
+	background:url('./../images/bg.png')0px 0px;
+	opacity:0;
+	animation:bright 2s  infinite;
+}
+@keyframes bright{
+	0%,100%{
+		background-size:453px 510px;
+	}
+	
+	50%{
+		background-size:500px 560px;
+		opacity:1;	
+	}
+}
+#win_box #man{
+	width:276px;
+	height:550px;
+	margin:0 auto;
+}
+#win_box #man .header{
+	width:142px;
+	height:175px;
+	position:relative;
+	top:2px;
+	left:4px;
+	z-index:1;
+	background:url('../images/texture.png') -486px -4px;
+	/*border:1px solid #ccc ;*/
+	/*transform:rotate(180deg);*/
+}
+#win_box #man .header .eyes{
+	width:88px;
+	height:39px;
+	position:absolute;
+	top:88px;
+	left:37px;
+	background:url('../images/texture.png');
+	background-position:4px -227px;
+	/*transition:transform 1s;*/
+	/*border:1px solid red;*/
+	animation:run 3s steps(1) infinite;
+}
+@keyframes run{
+	0%{
+		background:url('../images/texture.png');
+		background-position:-97px -228px;
+		/*transform:translateY(0px);*/
+	}
+	50%{
+		background:url('../images/texture.png');
+		background-position:4px -227px;
+		/*transform:translateY(-1px);*/
+	}
+	100%{
+		background:url('../images/texture.png');
+		background-position:4px -227px;
+		/*transform:translateY(-1px);*/
+	}
+}
+ #win_box #man .header  .nose{
+	width:26px;
+	height:42px;
+	position:absolute;
+	top:109px;
+	left:74px;
+	background:url('../images/texture.png') -720px -250px;
+	/*border:1px solid red;*/
+}
+#win_box #man .header .mouth{
+	width:36px;
+	height:14px;
+	position:absolute;
+	top:148px;
+	left:74px;
+	/*background:url('../images/texture.png') -508px -278px;*/
+	background:url('../images/texture.png') -38px -299px;
+	animation:run1  3s steps(1) infinite ;
+	/*border:1px solid red;*/
+}
+@keyframes run1{
+	0%{background:url('../images/texture.png') ;
+		background-position:-38px -299px; 
+	}
+		
+	50%{
+		background:url('../images/texture.png');
+		background-position:-508px -278px;
+		 }
+	100%{
+		background:url('../images/texture.png'); 
+		background-position:-508px -278px;
+	}
+
+}
+#win_box #man .body1{
+	width:85px;
+	height:92px;
+	position:relative;
+	top:-12px;
+	left:31px;
+	background:url('../images/texture.png') -709px -1px;
+	/*border:1px solid #ccc ;*/
+} 
+#win_box #man .body2{
+	width:79px;
+	height:58px;
+	position:relative;
+	top:-36px;
+	left:39px;
+	z-index:-3;
+	background:url('../images/texture.png') -705px -100px;
+	/*border:1px solid #ccc ;*/
+}
+#win_box #man .head1{
+	width:41px;
+	height:78px;
+	position:relative;
+	top:-153px;
+	left:7px;
+	z-index:1;
+	background:url('../images/texture.png') -422px -185px;
+	transform:rotate(32deg);
+	/*border:1px solid #ccc ;*/
+}
+#win_box #man .head_A{
+	width:36px;
+	height:57px;
+	position:relative;
+	top:-171px;
+	left:15px;
+	z-index:-1;
+	background:url('../images/texture.png') -679px -254px;
+	transform:rotate(-23deg);
+}
+#win_box #man .head_C{
+	width:28px;
+	height:43px;
+	position:relative;
+	top:-190px;
+	left:51px;
+	z-index:-2;
+	background:url('../images/texture.png') -174px -271px;
+	transform:rotate(-23deg);
+}
+#win_box #man  .head2{
+	width:41px;
+	height:82px;
+	position:relative;
+	top:-334px;
+	left:93px;
+	background:url('../images/texture.png') -705px -163px;
+	transform:rotate(-35deg);
+	z-index:-4;
+	/*border:1px solid #ccc ;*/
+}
+#win_box #man  .head_B{
+	width:27px;
+	height:70px;
+	position:relative;
+	top:-357px;
+	left:124px;
+	z-index:-5;
+	background:url('../images/texture.png') -758px -158px;
+	transform:rotate(-10deg);
+}
+#win_box #man .head_D{
+	width:21px;
+	height:36px;
+	position:relative;
+	top:-365px;
+	left:138px;
+	z-index:-2;
+	background:url('../images/texture.png') -921px -232px;
+	transform:rotate(-23deg);
+}
+#win_box #man  .ass{
+	width:75px;
+	height:50px;
+	position:relative;
+	top:-432px;
+	left:42px;
+	z-index:-4;
+	background:url('../images/texture.png') -794px -160px;
+	/*border:1px solid #ccc ;*/
+
+}
+#win_box #man .foot1{
+	width:45px;
+	height:84px;
+	position:relative;
+	top:-452px;
+	left:35px;
+	z-index:-3;
+	background:url('../images/texture.png') -958px -75px;
+	/*border:1px solid #ccc ;*/
+}
+#win_box #man .footA{
+	width:42px;
+	height:83px;
+	position:relative;
+	top:-476px;
+	left:19px;
+	background:url('../images/texture.png') -579px -178px;
+	/*border:1px solid #ccc;*/
+}
+#win_box #man  .foot2{
+	width:41px;
+	height:86px;
+	position:relative;
+	top:-623px;
+	left:74px;
+	z-index:-5;
+	background:url('../images/texture.png') -192px -181px;
+	/*border:1px solid #ccc ;*/
+}
+#win_box #man .footB{
+	width:42px;
+	height:89px;
+	position:relative;
+	top:-653px;
+	left:60px;
+	background:url('../images/texture.png') -948px -158px;
+	/*border:1px solid #ccc;*/
+}
+#win_box #man .shoes1{
+	width:67px;
+	height:38px;
+	position:relative;
+	top:-664px;
+	left:20px;
+	background:url('../images/texture.png') -552px -270px;
+	transform:translate(0px) rotate(10deg);
+}
+#win_box #man .shoes2{
+	width:42px;
+	height:52px;
+	position:relative;
+	top:-702px;
+	left:64px;
+	background:url('../images/texture.png') -832px -260px;
+	transform:rotate(-8deg) translateY(-5px);
+
+}
+/*你输了样式*/
+#fail_box{
+	width:100%;
+	height:100%;
+	display:none;
+}
+#fail{
+	width:350px;
+	height:80px;
+	line-height:80px;
+	margin:0 auto;
+	display:block;
+	color:gold;
+	font-size:80px;
+	opacity:0;
+	animation:fade-in1 0s linear 0.2s;
+	animation-fill-mode:forwards;
+}
+@keyframes fade-in1{
+	0%{
+		opacity:0;
+		text-shadow:0px 0px 0px #FFCC00;
+		transform:translateY(-2000PX);
+		opacity:0;
+	}
+	80%{
+		opacity:0.7;
+		text-shadow:2px 2px 2px #FFCC00;
+	}
+	100%{
+		opacity:1;
+		text-shadow:3px 3px 2px #FFCC00;
+		transform:translateY(0PX);
+	}
+}
+/*.bright{
+	width:400px;
+	height:90px;
+	margin:0 auto;
+}*/
+#fail_box  #man{
+	width:276px;
+	height:550px;
+	margin:30px auto;
+	
+}
+#fail_box  #man .header{
+	width:142px;
+	height:175px;
+	position:relative;
+	top:2px;
+	left:4px;
+	z-index:16;
+	background:url('../images/texture.png') -486px -4px;
+	/*border:1px solid #ccc ;*/
+	/*transform:rotate(180deg);*/
+	animation:yinying 3s linear 1s;
+}
+#fail_box  #man .header .eyes{
+	width:88px;
+	height:39px;
+	position:absolute;
+	top:88px;
+	left:37px;
+	background:url('../images/texture.png');
+	background-position:-784px -220px;
+	/*transition:transform 1s;*/
+	/*border:1px solid red;*/
+	animation:run 2s steps(1) infinite;
+}
+@keyframes run{
+	0%{
+		background:url('../images/texture.png');
+		background-position:-784px -220px;
+	}
+	50%{
+		background:url('../images/texture.png');
+		background-position:-241px -184px;
+	}
+	100%{
+		background:url('../images/texture.png');
+		background-position:-241px -184px;
+	}
+}
+#fail_box  #man .header .eyes_lei{
+	width:120px;
+	height:120px;
+	display:block;
+	/*border:1px solid #ccc;*/
+}
+#fail_box  #man .header .eyes_lei:after{
+	left:calc(50% - 30%);
+	content:' ';
+}
+#fail_box  #man .header .eyes_lei .lei{
+	width:14px;
+	height:16px;
+	display:block;
+	left:calc(50% - 7px);
+	border-radius:50%;
+	position:absolute;
+	top:34px;
+	left:44px;
+	z-index:20;
+	content:' ';
+	background: transparent;
+	box-shadow:25px 0 0 0 #0000,-25px 0 0 0 #0000;
+	/*border:1px solid #ccc;*/
+}
+
+#fail_box  #man .header .eyes_lei .lei:after{
+	content:'　';
+	width:12px;
+	height:12px;
+	display:line-block;
+	margin-left:26px;
+	border-radius:0% 100% 50% 53% /0 68% 51% 100%;
+	transform-origin:0% 0%;
+	background:#548DFF;
+	 position:absolute;
+	    left: 8px;
+	    top: 2px;
+	animation:tear 2s ease-in infinite;
+	transform: rotate(41deg);
+}
+@keyframes tear{
+	0% {
+	    display: block;
+	    position:absolute;
+	    left: 8px;
+	    top: 2px;
+	    transform: rotate(41deg) ;
+	  }
+	  25% {
+	    display: block;
+	    position:absolute;
+	    left: 8px;
+	    top:18px;
+	    transform: rotate(41deg);
+	  }
+	  49.9% {
+	    display: block;
+	    position:absolute;
+	    left: 8px;
+	    top: 34px;
+	    transform: rotate(41deg) ;
+	  }
+	  50% {
+	    display: block;
+	    position:absolute;
+	    
+	    left: -58px;
+	    top: -2px;
+	    transform: rotate(41deg) ;
+	  }
+	  75% {
+	    display: block;
+	    position:absolute;
+	    left: -58px;
+	    top: 18px;
+	    transform: rotate(41deg) ;
+	  }
+	  99.9% {
+	    display: block;
+	    position:absolute;
+	    left: -58px;
+	    top: 39px;
+	    transform: rotate(41deg);
+	  }
+}
+#fail_box  #man .header .nose{
+	width:26px;
+	height:42px;
+	position:absolute;
+	top:109px;
+	left:74px;
+	background:url('../images/texture.png') -720px -250px;
+	/*border:1px solid red;*/
+}
+#fail_box  #man .header .mouth{
+	width:36px;
+	height:14px;
+	position:absolute;
+	top:148px;
+	left:74px;
+	/*background:url('../images/texture.png') -508px -278px;*/
+	background:url('../images/texture.png') -37px -280px;
+}
+#fail_box  #man .body1{
+	width:85px;
+	height:92px;
+	position:relative;
+	top:-12px;
+	left:31px;
+	background:url('../images/texture.png') -709px -1px;
+	/*border:1px solid #ccc ;*/
+}
+#fail_box  #man .body2{
+	width:79px;
+	height:58px;
+	position:relative;
+	top:-36px;
+	left:39px;
+	z-index:-3;
+	background:url('../images/texture.png') -705px -100px;
+	/*border:1px solid #ccc ;*/
+}
+#fail_box  #man .head1{
+	width:41px;
+	height:78px;
+	position:relative;
+	top:-153px;
+	left:7px;
+	z-index:1;
+	background:url('../images/texture.png') -422px -185px;
+	transform:rotate(32deg);
+	/*border:1px solid #ccc ;*/
+}
+#fail_box  #man .head_A{
+	width:36px;
+	height:57px;
+	position:relative;
+	top:-171px;
+	left:15px;
+	z-index:-1;
+	background:url('../images/texture.png') -679px -254px;
+	transform:rotate(-23deg);
+}
+#fail_box  #man .head_C{
+	width:28px;
+	height:43px;
+	position:relative;
+	top:-190px;
+	left:51px;
+	z-index:-2;
+	background:url('../images/texture.png') -174px -271px;
+	transform:rotate(-23deg);
+}
+#fail_box  #man .head2{
+	width:41px;
+	height:82px;
+	position:relative;
+	top:-334px;
+	left:93px;
+	background:url('../images/texture.png') -705px -163px;
+	transform:rotate(-35deg);
+	z-index:-4;
+	/*border:1px solid #ccc ;*/
+}
+#fail_box  #man .head_B{
+	width:27px;
+	height:70px;
+	position:relative;
+	top:-357px;
+	left:124px;
+	z-index:-5;
+	background:url('../images/texture.png') -758px -158px;
+	transform:rotate(-10deg);
+}
+#fail_box  #man .head_D{
+	width:21px;
+	height:36px;
+	position:relative;
+	top:-365px;
+	left:138px;
+	z-index:-2;
+	background:url('../images/texture.png') -921px -232px;
+	transform:rotate(-23deg);
+}
+#fail_box  #man .ass{
+	width:75px;
+	height:50px;
+	position:relative;
+	top:-432px;
+	left:42px;
+	z-index:-4;
+	background:url('../images/texture.png') -794px -160px;
+	/*border:1px solid #ccc ;*/
+
+}
+#fail_box  #man .foot1{
+	width:45px;
+	height:84px;
+	position:relative;
+	top:-452px;
+	left:35px;
+	z-index:-3;
+	background:url('../images/texture.png') -958px -75px;
+	/*border:1px solid #ccc ;*/
+}
+#fail_box  #man .footA{
+	width:42px;
+	height:83px;
+	position:relative;
+	top:-476px;
+	left:19px;
+	background:url('../images/texture.png') -579px -178px;
+	/*border:1px solid #ccc;*/
+}
+#fail_box  #man .foot2{
+	width:41px;
+	height:86px;
+	position:relative;
+	top:-623px;
+	left:74px;
+	z-index:-5;
+	background:url('../images/texture.png') -192px -181px;
+	/*border:1px solid #ccc ;*/
+}
+#fail_box  #man .footB{
+	width:42px;
+	height:89px;
+	position:relative;
+	top:-653px;
+	left:60px;
+	background:url('../images/texture.png') -948px -158px;
+	/*border:1px solid #ccc;*/
+}
+#fail_box  #man .shoes1{
+	width:67px;
+	height:38px;
+	position:relative;
+	top:-664px;
+	left:20px;
+	background:url('../images/texture.png') -552px -270px;
+	transform:translate(0px) rotate(10deg);
+}
+#fail_box  #man .shoes2{
+	width:42px;
+	height:52px;
+	position:relative;
+	top:-702px;
+	left:64px;
+	background:url('../images/texture.png') -832px -260px;
+	transform:rotate(-8deg) translateY(-5px);
+
+}

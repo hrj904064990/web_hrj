@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+var str=['hello','node','element','node','hello','blue','red'];
+var str1=[];
+function first(args){
+	for(i=0;i<args.length;i++){
+		if(str1.indexOf(args[i])<0)
+		{
+			str1.push(args[i])
+		}
+		}
+		return str1;
+}
+first(str);
+console.log(str1)
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

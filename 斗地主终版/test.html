@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		// let arr=[1,1,2,2,2,3,4,4,4,5,5,6,6,6,,7,9,10,10,10];
+		// let table=[3,4,5,6,7];
+		// let all_player=[player1,player2,player3];
+		let all_poker=[
+			{value:3,type:2},
+			{value:4,type:1},
+			{value:5,type:0},
+			{value:6,type:0},
+			{value:6,type:1},
+			{value:7,type:0},
+			{value:7,type:1},
+			{value:8,type:0},
+			{value:8,type:1},
+			{value:9,type:0},
+			{value:9,type:1},
+			{value:9,type:2},
+			{value:9,type:3},
+			{value:10,type:0},
+			{value:10,type:1},
+			{value:10,type:2}
+		];
+		let table=[
+			{value:3,type:0},
+			{value:3,type:1},
+			{value:4,type:0},
+			{value:4,type:1},
+			{value:5,type:0},
+			{value:5,type:1}
+		]
+		// for(let i=1;i<=13;i++)
+		// {
+		// 	for(let j=0;j<4;j++)
+		// 	{
+		// 		let my_poker=new poker(i,j);
+		// 		all_poker.push(my_poker);
+		// 	}
+		// }
+		myAiShuZi(all_poker,table);
+		function myAiShuZi(arr,table)
+		{
+			let temp=[];	
+			for(let i=0;i<arr.length;i++)
+			{
+				if(arr[i].value*1>table[0].value*1)
+				{
+					temp.push(arr[i]);
+				}
+			}
+			let r=[];
+			for(let i=0;i<temp.length-1;i++)
+			{
+				if(temp[i].value*1 ==temp[i+1].value*1)
+				{
+					// r.push(temp[i].value);
+					if(r.indexOf(temp[i])<0)
+					{
+						r.push(temp[i]);
+					}
+				}
+			}
+			// for(let i=0;i<r.length;i++)
+			// {
+			// 	for(let j=1;j<r.length-1;j++)
+			// 	{
+			// 		if(r[i]*1 == r[j]*1)
+			// 		{
+			// 			r.slice(j,1);
+			// 		}
+			// 	}
+			// }
+			console.log(r);
+		}
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

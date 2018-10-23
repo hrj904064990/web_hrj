@@ -1,0 +1,37 @@
+.countDown0{
+	width: 77px;
+	height:83px;
+	background:url(../images02/jichu_playing.png);
+	background-position: 0px 0px;
+	display: none;
+	position: absolute;
+	top:53%;
+	left: 19%;
+	z-index: 1000;
+}
+.countDown1{
+	width: 77px;
+	height:83px;
+	background:url(../images02/jichu_playing.png);
+	display: none;
+	position: absolute;
+	top:68%;
+	left: 74%;
+	z-index: 1000;
+}
+.countDown2{
+	width: 77px;
+	height:83px;
+	background:url(../images02/jichu_playing.png);
+	display: none;
+	position: absolute;
+	top:53%;
+	left: 76%;
+	z-index: 1000;
+}
+.countDown{
+	text-align: center;
+	line-height: 88px;
+	font-size: 30px;
+	color: #fff;
+}

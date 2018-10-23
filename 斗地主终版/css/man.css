@@ -1,0 +1,215 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+#man{
+    width: 500px;
+    height: 550px;
+    position: absolute;
+    bottom: -188px;
+    left: 227px;
+}
+.header{
+	width:142px;
+	height:175px;
+	position:relative;
+	top:2px;
+	left:4px;
+	z-index:1;
+	background:url('../images/texture.png') -486px -4px;
+	/*border:1px solid #ccc ;*/
+	/*transform:rotate(180deg);*/
+}
+.eyes{
+	width:91px;
+	height:39px;
+	position:absolute;
+	top:88px;
+	left:37px;
+	background:url('../images/texture.png');
+	background-position:-234px -227px;
+	/*transition:transform 1s;*/
+	/*border:1px solid red;*/
+	animation:run 2s steps(1) infinite;
+}
+@keyframes run{
+	0%{
+		background:url('../images/texture.png');
+		background-position:-784px -220px;
+	}
+	50%{
+		background:url('../images/texture.png');
+		background-position:-234px -227px;
+	}
+	100%{
+		background:url('../images/texture.png');
+		background-position:-784px -220px;
+	}
+}
+.nose{
+	width:26px;
+	height:42px;
+	position:absolute;
+	top:109px;
+	left:74px;
+	background:url('../images/texture.png') -720px -250px;
+	/*border:1px solid red;*/
+}
+.mouth{
+	width:36px;
+	height:14px;
+	position:absolute;
+	top:148px;
+	left:74px;
+	background:url('../images/texture.png') -41px -298px;
+	/*border:1px solid red;*/
+}
+.body1{
+	width:85px;
+	height:92px;
+	position:relative;
+	top:-12px;
+	left:31px;
+	background:url('../images/texture.png') -709px -1px;
+	/*border:1px solid #ccc ;*/
+}
+.body2{
+	width:79px;
+	height:58px;
+	position:relative;
+	top:-36px;
+	left:39px;
+	z-index:-3;
+	background:url('../images/texture.png') -705px -100px;
+	/*border:1px solid #ccc ;*/
+}
+.head1{
+	width:41px;
+	height:78px;
+	position:relative;
+	top:-153px;
+	left:7px;
+	z-index:1;
+	background:url('../images/texture.png') -422px -185px;
+	transform:rotate(32deg);
+	/*border:1px solid #ccc ;*/
+}
+.head_A{
+	width:36px;
+	height:57px;
+	position:relative;
+	top:-171px;
+	left:15px;
+	z-index:-1;
+	background:url('../images/texture.png') -679px -254px;
+	transform:rotate(-23deg);
+}
+.head_C{
+	width:28px;
+	height:43px;
+	position:relative;
+	top:-190px;
+	left:51px;
+	z-index:-2;
+	background:url('../images/texture.png') -174px -271px;
+	transform:rotate(-23deg);
+}
+.head2{
+	width:41px;
+	height:82px;
+	position:relative;
+	top:-334px;
+	left:93px;
+	background:url('../images/texture.png') -705px -163px;
+	transform:rotate(-35deg);
+	z-index:-4;
+	/*border:1px solid #ccc ;*/
+}
+.head_B{
+	width:27px;
+	height:70px;
+	position:relative;
+	top:-357px;
+	left:124px;
+	z-index:-5;
+	background:url('../images/texture.png') -758px -158px;
+	transform:rotate(-10deg);
+}
+.head_D{
+	width:21px;
+	height:36px;
+	position:relative;
+	top:-365px;
+	left:138px;
+	z-index:-2;
+	background:url('../images/texture.png') -921px -232px;
+	transform:rotate(-23deg);
+}
+.ass{
+	width:75px;
+	height:50px;
+	position:relative;
+	top:-432px;
+	left:42px;
+	z-index:-4;
+	background:url('../images/texture.png') -794px -160px;
+	/*border:1px solid #ccc ;*/
+
+}
+.foot1{
+	width:45px;
+	height:84px;
+	position:relative;
+	top:-452px;
+	left:35px;
+	z-index:-3;
+	background:url('../images/texture.png') -958px -75px;
+	/*border:1px solid #ccc ;*/
+}
+.footA{
+	width:42px;
+	height:83px;
+	position:relative;
+	top:-476px;
+	left:19px;
+	background:url('../images/texture.png') -579px -178px;
+	/*border:1px solid #ccc;*/
+}
+.foot2{
+	width:41px;
+	height:86px;
+	position:relative;
+	top:-623px;
+	left:74px;
+	z-index:-5;
+	background:url('../images/texture.png') -192px -181px;
+	/*border:1px solid #ccc ;*/
+}
+.footB{
+	width:42px;
+	height:89px;
+	position:relative;
+	top:-653px;
+	left:60px;
+	background:url('../images/texture.png') -948px -158px;
+	/*border:1px solid #ccc;*/
+}
+.shoes1{
+	width:67px;
+	height:38px;
+	position:relative;
+	top:-664px;
+	left:20px;
+	background:url('../images/texture.png') -552px -270px;
+	transform:translate(0px) rotate(10deg);
+}
+.shoes2{
+	width:42px;
+	height:52px;
+	position:relative;
+	top:-702px;
+	left:64px;
+	background:url('../images/texture.png') -832px -260px;
+	transform:rotate(-8deg) translateY(-5px);
+
+}

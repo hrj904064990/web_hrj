@@ -1,0 +1,441 @@
+
+.bga1{
+	width:100%;
+	height:100%;
+	display:block;
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:20;
+	display:none;
+	background:rgba(0,0,0,0.5);
+}
+/*你赢了样式*/
+#win_box{
+	width:800px;
+	height:800px;
+	margin:87px auto 0;
+	position:absolute;
+	z-index:25;
+	display:none;
+}
+#win1{
+	width:280px;
+	height:72px;
+	line-height:80px;
+	margin:0 auto;
+	position:absolute;
+	top:0px;
+	left:751px;
+	display:none;
+	/*opacity:0;*/
+	background:url('../images/dizhunongminshengli.png') -3px -1px;
+	animation:fade-in 0.2s linear 0.5s;
+	animation-fill-mode:forwards;
+}
+#win2{
+	width:280px;
+	height:72px;
+	line-height:80px;
+	margin:0 auto;
+	position:absolute;
+	top:0px;
+	left:751px;
+	display:none;
+	/*opacity:0;*/
+	background:url('../images/fail.png');
+	animation:fade-in 0.2s linear 0.5s;
+	animation-fill-mode:forwards;
+}
+#win_box .xing1{
+	width:20px;
+	height:20px;
+	position:absolute;
+	top:8px;
+	left:735px;
+	/*display:none;*/
+	opacity:0;
+	background:url('../images/xing.png') no-repeat;
+	animation:xing1 1s linear infinite 0.5s;
+}
+@keyframes xing1{
+	0%{
+		background-size:20px 20px;
+	}
+	100%{
+		width:25px;
+		height:25px;
+		opacity:1;
+		transform:rotate(60deg);
+		background-size:25px 25px;
+
+	}
+}
+#win_box .xing2{
+	width:20px;
+	height:20px;
+	position:absolute;
+	top:18px;
+	left:702px;
+	opacity:0;
+	background:url('../images/xing.png') no-repeat;
+	animation:xing2 1s linear infinite;
+}
+@keyframes xing2{
+	0%{
+		background-size:20px 20px;
+	}
+	100%{
+		width:25px;
+		height:25px;
+		opacity:1;
+		transform:rotate(60deg);
+		background-size:25px 25px;
+	}
+}
+#win_box .xing3{
+	width:20px;
+	height:20px;
+	position:absolute;
+	top:75px;
+	left:728px;
+	opacity:0;
+	background:url('../images/xing.png') no-repeat;
+	animation:xing3 1s linear infinite;
+}
+@keyframes xing3{
+	0%{
+		background-size:20px 20px;
+	}
+	100%{
+		width:25px;
+		height:25px;
+		opacity:1;
+		transform:rotate(60deg);
+		background-size:25px 25px;
+	}
+}
+#win_box .xing4{
+	width:20px;
+	height:20px;
+	position:absolute;
+	top:8px;
+	left:1025px;
+	opacity:0;
+	background:url('../images/xing.png') no-repeat;
+	animation:xing4 1s linear infinite;
+}
+@keyframes xing4{
+	0%{
+		background-size:20px 20px;
+	}
+	100%{
+		width:25px;
+		height:25px;
+		opacity:1;
+		transform:rotate(60deg);
+		background-size:25px 25px;
+	}
+}
+#win_box .xing5{
+	width:20px;
+	height:20px;
+	position:absolute;
+	top:39px;
+	left:1046px;
+	opacity:0;
+	background:url('../images/xing.png') no-repeat;
+	animation:xing5 1s linear infinite;
+}
+@keyframes xing5{
+	0%{
+		background-size:20px 20px;
+	}
+	100%{
+		width:25px;
+		height:25px;
+		opacity:1;
+		transform:rotate(60deg);
+		background-size:25px 25px;
+	}
+}
+#win_box .xing6{
+	width:20px;
+	height:20px;
+	position:absolute;
+	top:50px;
+	left:1010px;
+	opacity:0;
+	background:url('../images/xing.png') no-repeat;
+	animation:xing6 1s linear infinite;
+}
+@keyframes xing6{
+	0%{
+		background-size:20px 20px;
+	}
+	100%{
+		width:25px;
+		height:25px;
+		opacity:1;
+		transform:rotate(60deg);
+		background-size:25px 25px;
+	}
+}
+#win_box .bright{
+	width:700px;
+	height:650px;
+	position:absolute;
+	top:73px;
+	left:652px;
+	z-index:-6;
+	background:url('./../images/bg.png') no-repeat -10px -10px;
+	opacity:0;
+	animation:bright 2s  infinite;
+}
+@keyframes bright{
+	0%,100%{
+		background-size:453px 510px;
+	}
+	
+	50%{
+		background-size:500px 560px;
+		opacity:1;	
+	}
+}
+#win_box #man2{
+	width:276px;
+	height:550px;
+	margin:20px auto;
+	position:absolute;
+	top:91px;
+	left:808px;
+}
+#win_box #man2 .header{
+	width:142px;
+	height:175px;
+	position:relative;
+	top:2px;
+	left:4px;
+	z-index:1;
+	background:url('../images/texture.png') -486px -4px;
+	/*border:1px solid #ccc ;*/
+	/*transform:rotate(180deg);*/
+}
+#win_box #man2 .header .eyes{
+	width:88px;
+	height:39px;
+	position:absolute;
+	top:88px;
+	left:37px;
+	background:url('../images/texture.png');
+	background-position:4px -227px;
+	/*transition:transform 1s;*/
+	/*border:1px solid red;*/
+	animation:run 3s steps(1) infinite;
+}
+@keyframes run{
+	0%{
+		background:url('../images/texture.png');
+		background-position:-97px -228px;
+		/*transform:translateY(0px);*/
+	}
+	50%{
+		background:url('../images/texture.png');
+		background-position:4px -227px;
+		/*transform:translateY(-1px);*/
+	}
+	100%{
+		background:url('../images/texture.png');
+		background-position:4px -227px;
+		/*transform:translateY(-1px);*/
+	}
+}
+ #win_box #man2 .header  .nose{
+	width:26px;
+	height:42px;
+	position:absolute;
+	top:109px;
+	left:74px;
+	background:url('../images/texture.png') -720px -250px;
+	/*border:1px solid red;*/
+}
+#win_box #man2 .header .mouth{
+	width:36px;
+	height:14px;
+	position:absolute;
+	top:148px;
+	left:74px;
+	/*background:url('../images/texture.png') -508px -278px;*/
+	background:url('../images/texture.png') -38px -299px;
+	animation:run1  3s steps(1) infinite ;
+	/*border:1px solid red;*/
+}
+@keyframes run1{
+	0%{background:url('../images/texture.png') ;
+		background-position:-38px -299px; 
+	}
+		
+	50%{
+		background:url('../images/texture.png');
+		background-position:-508px -278px;
+		 }
+	100%{
+		background:url('../images/texture.png'); 
+		background-position:-508px -278px;
+	}
+
+}
+#win_box #man2 .body1{
+	width:85px;
+	height:92px;
+	position:relative;
+	top:-12px;
+	left:31px;
+	background:url('../images/texture.png') -709px -1px;
+	/*border:1px solid #ccc ;*/
+} 
+#win_box #man2 .body2{
+	width:79px;
+	height:58px;
+	position:relative;
+	top:-36px;
+	left:39px;
+	z-index:-3;
+	background:url('../images/texture.png') -705px -100px;
+	/*border:1px solid #ccc ;*/
+}
+#win_box #man2 .head1{
+	width:41px;
+	height:78px;
+	position:relative;
+	top:-153px;
+	left:7px;
+	z-index:1;
+	background:url('../images/texture.png') -422px -185px;
+	transform:rotate(32deg);
+	/*border:1px solid #ccc ;*/
+}
+#win_box #man2 .head_A{
+	width:36px;
+	height:57px;
+	position:relative;
+	top:-171px;
+	left:15px;
+	z-index:-1;
+	background:url('../images/texture.png') -679px -254px;
+	transform:rotate(-23deg);
+}
+#win_box #man2 .head_C{
+	width:28px;
+	height:43px;
+	position:relative;
+	top:-190px;
+	left:51px;
+	z-index:-2;
+	background:url('../images/texture.png') -174px -271px;
+	transform:rotate(-23deg);
+}
+#win_box #man2  .head2{
+	width:41px;
+	height:82px;
+	position:relative;
+	top:-334px;
+	left:93px;
+	background:url('../images/texture.png') -705px -163px;
+	transform:rotate(-35deg);
+	z-index:-4;
+	/*border:1px solid #ccc ;*/
+}
+#win_box #man2  .head_B{
+	width:27px;
+	height:70px;
+	position:relative;
+	top:-357px;
+	left:124px;
+	z-index:-5;
+	background:url('../images/texture.png') -758px -158px;
+	transform:rotate(-10deg);
+}
+#win_box #man2 .head_D{
+	width:21px;
+	height:36px;
+	position:relative;
+	top:-365px;
+	left:138px;
+	z-index:-2;
+	background:url('../images/texture.png') -921px -232px;
+	transform:rotate(-23deg);
+}
+#win_box #man2  .ass{
+	width:75px;
+	height:50px;
+	position:relative;
+	top:-432px;
+	left:42px;
+	z-index:-4;
+	background:url('../images/texture.png') -794px -160px;
+	/*border:1px solid #ccc ;*/
+
+}
+#win_box #man2 .foot1{
+	width:45px;
+	height:84px;
+	position:relative;
+	top:-452px;
+	left:35px;
+	z-index:-3;
+	background:url('../images/texture.png') -958px -75px;
+	/*border:1px solid #ccc ;*/
+	transform:rotate(-1deg);
+}
+#win_box #man2 .footA{
+	width:42px;
+	height:83px;
+	position:relative;
+	top:-476px;
+	left:19px;
+	background:url('../images/texture.png') -579px -178px;
+	/*border:1px solid #ccc;*/
+	transform:rotate(3deg);
+}
+#win_box #man2  .foot2{
+	width:41px;
+	height:86px;
+	position:relative;
+	top:-621px;
+	left:81px;
+	z-index:-5;
+	background:url('../images/texture.png') -192px -181px;
+	/*border:1px solid #ccc ;*/
+	transform:rotate(-13deg);
+}
+#win_box #man2 .footB{
+	width:42px;
+	height:89px;
+	position:relative;
+	top:-653px;
+	left:85px;
+	background:url('../images/texture.png') -948px -158px;
+	/*border:1px solid #ccc;*/
+	transform:rotate(-18deg);
+}
+#win_box #man2 .shoes1{
+	width:67px;
+	height:38px;
+	position:relative;
+	top:-664px;
+	left:17px;
+	background:url('../images/texture.png') -552px -270px;
+	transform:translate(0px) rotate(10deg);
+	transform:rotate(360deg);
+}
+#win_box #man2 .shoes2{
+	width:42px;
+	height:52px;
+	position:relative;
+	top:-702px;
+	left:98px;
+	background:url('../images/texture.png') -832px -260px;
+	transform:rotate(-8deg) translateY(-5px);
+	transform:rotate(-363deg);
+}

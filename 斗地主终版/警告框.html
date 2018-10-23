@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>jQuery弹出层效果</title>
+	<meta charset="utf-8">
+		<script src="jquery-3.3.1.min.js" type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="警告框.css">
+	</head>
+	<body>
+		<div id="fade" class="black_overlay"></div>
+		<div id="MyDiv" class="white_content">
+			<div style="text-align: right; cursor: pointer; height: 40px;margin:30px 30px 0 0">
+				<span style="font-size: 16px;" onclick="CloseDiv('MyDiv','fade')">关闭</span>
+			</div>
+			你出的牌不符合规则
+		</div>
+	</body>
+	<script type="text/javascript" src="js/警告框.js"></script>
+</html>
